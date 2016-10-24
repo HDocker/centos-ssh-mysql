@@ -100,4 +100,6 @@ jdeathe/centos-ssh-mysql:centos-6-${RELEASE_VERSION} \
 	org.deathe.url="https://github.com/jdeathe/centos-ssh-mysql" \
 	org.deathe.description="CentOS-6 6.8 x86_64 - MySQL 5.1."
 
+VOLUME /root
+
 CMD ["/usr/bin/supervisord", "--configuration=/etc/supervisord.conf"]
