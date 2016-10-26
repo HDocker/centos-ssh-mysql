@@ -99,7 +99,8 @@ jdeathe/centos-ssh-mysql:centos-6-${RELEASE_VERSION} \
 	org.deathe.vendor="jdeathe" \
 	org.deathe.url="https://github.com/jdeathe/centos-ssh-mysql" \
 	org.deathe.description="CentOS-7 7.2 x86_64 - MySQL 5.1."
-
+	
+RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 RUN mkdir -p /home/workdata
 VOLUME /home/workdata
 
