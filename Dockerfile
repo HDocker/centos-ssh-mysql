@@ -80,7 +80,7 @@ jdeathe/centos-ssh-mysql:centos-6-${RELEASE_VERSION} \
 /usr/sbin/scmi install \
 --chroot=/media/root \
 --name=\${NAME} \
---tag=centos-6-${RELEASE_VERSION} \
+--tag=centos-7-${RELEASE_VERSION} \
 --setopt='--volume {{NAME}}.data-mysql:/var/lib/mysql'" \
 	uninstall="docker run \
 --rm \
@@ -90,7 +90,7 @@ jdeathe/centos-ssh-mysql:centos-6-${RELEASE_VERSION} \
 /usr/sbin/scmi uninstall \
 --chroot=/media/root \
 --name=\${NAME} \
---tag=centos-6-${RELEASE_VERSION} \
+--tag=centos-7-${RELEASE_VERSION} \
 --setopt='--volume {{NAME}}.data-mysql:/var/lib/mysql'" \
 	org.deathe.name="centos-ssh-mysql" \
 	org.deathe.version="${RELEASE_VERSION}" \
@@ -98,7 +98,7 @@ jdeathe/centos-ssh-mysql:centos-6-${RELEASE_VERSION} \
 	org.deathe.license="MIT" \
 	org.deathe.vendor="jdeathe" \
 	org.deathe.url="https://github.com/jdeathe/centos-ssh-mysql" \
-	org.deathe.description="CentOS-6 6.8 x86_64 - MySQL 5.1."
+	org.deathe.description="CentOS-7 7.2 x86_64 - MySQL 5.1."
 
 RUN mkdir -p /home/workdata
 VOLUME /home/workdata
